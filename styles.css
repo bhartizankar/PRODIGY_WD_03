@@ -1,0 +1,146 @@
+/* Reset */
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ee0ed4;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background and Layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+  }
+  
+  .container {
+    width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Game Board */
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: #e0e0e0;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+  }
+  
+  .cell.taken {
+    color: #555555;
+    background-color: #d9d9d9;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Controls */
+  .controls {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  select {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: border-color 0.3s;
+  }
+  
+  select:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #2575fc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1b5cc8;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Message */
+  #message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5c5c;
+    margin-top: 15px;
+  }
+  
